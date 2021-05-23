@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>WEB LEARN</title>
+  <link rel="shortcut icon" href="img/BL-Logo.jpg">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link href="https://www.healthtime.fit/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css">
+  
+  <link rel="stylesheet" href="https://www.healthtime.fit/css/owl.carousel.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet'>
+  
+  <link rel="stylesheet" href="css/libs/animate.css">
+  <link rel="stylesheet" href="css/site.css">
+
+
+<script src="https://www.healthtime.fit/js/owl.carousel.js "></script>
+  <script>
+    $(document).ready(function() {
+        $("#carousel").owlCarousel({
+            margin: 0,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            smartSpeed: 1000,
+            navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+            loop: true,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 4,
+                }
+            }
+        });
+    });
+</script>
+
+<style type="text/css">
+#carousel .item{ 
+  padding:5px 5px;
+} 
+#carousel .owl-nav{
+    position: absolute;
+    top: -35px;
+    right: 0;
+}
+
+#carousel .owl-nav .owl-prev,
+#carousel .owl-nav .owl-next{
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border: 2px solid #000;
+    display: inline-block;
+    font-size: 20px;
+    color: #000;
+    margin: 0 0 0 10px;
+    line-height: 30px;
+    cursor: pointer;
+}
+#carousel .owl-nav .owl-prev:hover,
+#carousel .owl-nav .owl-next:hover{
+    background: #000;
+    color: #fff;
+}
+</style>
+  
+  
+<style>
+  body {
+    font: 400 18px/1.8 Times New Roman;
+    text-align: justify;
+    color: #777;
+  }
+  h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 5px;      
+    font-size: 20px;
+    color: #111;
+  }
+  .container {
+    padding: 40px 80px;
+  }
+  .content{
+    padding: 10px;
+  }
+  .top{
+    margin-top: 50px;
+  }
+  .img-responsive,
+  .img-rounded{
+    width: 300px;
+    height: 150px;
+  }
+
+  .card-title {
+    background-color: #d34545;
+  }
+  .content:hover{
+    
+    /* display: flex;  */
+    /* flex-wrap: wrap; */
+    flex: 1;
+    padding: 10px;
+    /* margin: 10px;
+    padding: 10px; */
+    border: 2px solid #d34545;
+    /* border-radius: 2px; */
+    transition: all .3s ease;
+  }
+
+  .content1:hover{
+    
+    /* display: flex;  */
+    flex-wrap: wrap;
+    flex: 1;
+    /* margin: 10px;
+    padding: 10px; */
+    border: 2px solid white;
+    border-radius: 2px;
+    transition: all .3s ease;
+  }
+
+  .display-4{
+    text-align: center;
+  }
+ .txt-white{
+   color: #fff;
+   
+ }
+  .sub-head{
+    text-align: center;
+  }
+
+  .slider{
+    font-size:medium;
+  }
+
+  .carousel-inner img {
+    -webkit-filter: grayscale(10%);
+    filter: grayscale(10%); 
+    width: 100%; 
+    margin: auto;
+  }
+  .carousel-caption h3 {
+    color: #000 !important;
+    font-size: 60px;
+    text-align: right;
+    margin-left: 250px;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  .bg-1 {
+    background: #d34545;
+    color: #000;
+  }
+  .bg-2 {
+    background:white;
+    color: #000;
+  }
+  .bg-img{
+    background-image: url('img/bg1.jpg');
+  }
+  .bg-img2{
+    background-image: url('img/bg2.jpg');
+  }
+  .bg-footer{
+  background-image: url('img/footer.jpg');
+}
+
+  .bg-contact{
+  background-image: url('img/contact.jpg');
+}
+
+  /* #2d2d30 */
+  .bg-1 h3 {color: #fff;}
+  .bg-2 h3 {color: #000;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail p {
+    margin-top: 15px;
+    color: #555;
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: #d34545;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+    border: 1px solid #d34545;
+    background-color: #fff;
+    color: #d34545;
+  }
+
+  .submit{
+    padding: 10px 20px;
+    background-color: white;
+    color: #d34545;
+    border-radius: 0;
+    transition: .2s;
+  }
+  .submit:hover, .submit:focus {
+    border: 1px solid #d31818;
+    background-color: #fff;
+    color: #d34545
+  }
+  .modal-header, h4, .close {
+    background-color: #51c5bf;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-header, .modal-body {
+    padding: 40px 50px;
+  }
+  .nav-tabs li a {
+    color: #777;
+  }
+  #googleMap {
+    width: 100%;
+    height: 400px;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }  
+  .navbar {
+    font-family: Montserrat, Monospace;
+    margin-bottom: 0;
+    background-color: #fff;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+    color: #000 !important;
+  }
+  .navbar-nav li a:hover {
+    color: #fff !important;
+  }
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+  .open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+    color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+    background-color: #51c5bf !important;
+  }
+  .social a {
+    font-size: 4.5rem;
+    padding: 3rem;
+}
+
+
+  .fa-facebook {
+      color: #3b5998;
+  }
+
+  .fa-twitter {
+      color: #00aced;
+  }
+
+
+  .fa-instagram {
+      color: #517fa4;
+  }
+
+  .fa-youtube {
+      color: #bb0000;
+  }
+
+  .fa-facebook :hover,
+  .fa-twitter :hover,
+  .fa-google-plus-g :hover,
+  .fa-instagram :hover,
+  .fa-youtube :hover {
+      color: #d5d5d5;
+  }
+
+
+  footer {
+    background-color: white;
+    color: #000;
+    padding: 32px;
+  }
+  footer a {
+    color: white;
+  }
+  footer a:hover {
+    color: #777;
+    text-decoration: none;
+  }  
+  .form-control {
+    border-radius: 0;
+  }
+  textarea {
+    resize: none;
+  }
+  /*---Media Queries --*/
+
+@media (max-width: 992px) {
+    .social a {
+        font-size: 4em;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-caption {
+        top: 45%;
+    }
+    .carousel-caption h1 {
+        font-size: 350%
+    }
+    .carousel-caption h3 {
+        font-size: 140%;
+        font-weight: 400%;
+        padding-bottom: 0.2rem;
+    }
+    .carousel-caption .btn {
+        font-size: 95%;
+        padding: 8px 14px;
+    }
+    .display-4 {
+        font-size: 200%;
+    }
+    .social a {
+        font-size: 2.5em;
+        padding: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption {
+        top: 40%;
+    }
+    .carousel-caption h1 {
+        font-size: 250%
+    }
+    .carousel-caption h3 {
+        font-size: 110%;
+    }
+    .carousel-caption .btn {
+        font-size: 90%;
+        padding: 4px 8px;
+    }
+    .carousel-indicators {
+        display: none;
+    }
+    .display-4 {
+        font-size: 160%;
+    }
+    .social a {
+        font-size: 2em;
+        padding: 0.7rem;
+    }
+}
+
+
+/*---Firefox Bug Fix --*/
+
+.carousel-item {
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+}
+
+
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">WEB LEARN</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#myPage">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#features">FEATURES</a></li>
+        
+        <li><a href="#expert">EXPERT</a></li>
+        <li><a href="#classes">CLASSES</a></li>
+        <li><a href="#">SIGN IN</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            
+            <li><a href="#">STUDENT</a></li>
+            <li><a href="#pricing">COLLEGE</a></li> 
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+  
+    <div class="carousel-inner top" role="listbox">
+      <div class="item active">
+        <img src="img/bannerimgresized.jpg" alt="banner1" width="1200" height="700">
+        <div class="carousel-caption">
+          <p style="color:crimson; margin-left: 450px;">START LEARNING TODAY.. !!</p>
+          <h3><strong>Learn</strong> Your Desired <strong>Skills</strong> from the <strong>Experts</strong></h3>
+          <p style="color:crimson; margin-left: 450px;">Learning from Web is Total Fun.. !!
+          </p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="img/education_banner4.1.jpg" alt="Chicago" width="1200" height="700">
+        <div class="carousel-caption">
+          <!-- <h3>Yoga  & Mindfulness Classes</h3> -->
+          <p></p>
+        </div>      
+      </div>
+    
+      <div class="item">
+        <img src="img/employement_banner1.jpg" alt="Los Angeles" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>WEB LEARNING</h3>
+          <p></p>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!--- Welcome Section -->
+<div id="container">
+<section class="wow slideInLeft" data-wow-duration="3s">
+<div id="features" class="container-fluid padding">
+    <div class="row welcome text-center">
+        <div class="col-12">
+            <h1 class="display-4">Learn on your schedule</h1>
+        </div>
+        <hr>
+        <dic class="col-12">
+            <p class="lead">Anywhere, anytime. Start learning today!</p>
+        </dic>
+    </div>
+</div>
+<div class="x">
+<div class="container-fluid padding">
+    <div class="row welcome text-center">
+
+            <div class="col-xs-12 col-sm-6 col-md-4 content" >
+                <i class="fas fa-laptop"style='font-size:48px;'></i>
+                <!-- <img src="online class.jpg" alt="online class" width="400" height="300" > -->
+                <h3>130,000 online courses</h3>
+                <p>Enjoy a variety of fresh topics.</p>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4  content">
+                <i class="fas fa-trophy"style='font-size:48px;'></i>
+                <!-- <img src="Learning from international trainers.jpg" alt="Learning from international trainers" width="400" height="300"> -->
+                <h3>Expert instruction</h3>
+                <p>Find the right instructor for you.
+                  </p>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4  content">
+                <i class="fas fa-bullseye"style='font-size:48px;'></i>
+                <!-- <img src="multiple levels of yogo.jpg" alt="multiple levels" width="400" height="300"> -->
+                <h3>Lifetime access </h3>
+                <p>Learn on your schedule.</p>
+            </div>
+
+        </div>
+    </div>
+
+<div class="container-fluid padding">
+<div class="row welcome text-center">
+
+          <div class="col-xs-12 col-sm-6 col-md-4  content">
+              <i class="fas fa-spinner"style='font-size:48px;'></i>
+              <!-- <img src="focus.jpg" alt="focus on overall health and wellbeing" width="400" height="300"> -->
+              <h3>Go at your own pace</h3>
+              <p>Enjoy lifetime access to courses on our website and app</p>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-4 content">
+            <div class="card">
+                <!-- <img class="card-imd-top" src="meow13.jpg"> -->
+                <div class="card-body">
+                 <br>
+                    <h4 class="card-title">FREE 7 DAYS CLASS</h4>
+                    <p class="card-text">
+                        Get access to unlimited classes for 7 days.
+                    </p>
+                    <a href="#" class="btn btn-outline-secondary">Download Now</a>
+                </div>
+               
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-4  content">
+               <i class="fas fa-heart"style='font-size:48px;'></i>
+               <!-- <img src="unlimited yoga class.jpg" alt="unlimited yoga class.jpg" width="400" height="300"> -->
+               <h3>Learn from industry experts</h3>
+               <p>Select from top instructors around the world
+               </p>
+           </div>
+         
+    </div>
+    </div>
+  </div> 
+  
+</section>
+</div>
+
+<hr class="my-4">
+  <!-- Container (About Section) -->
+
+<section class="wow slideInRight " data-wow-duration="3s" >
+  <div id="about" class="container text-justify bg-img2" id="container">
+    <h1 class="display-4 txt-white">ABOUT</h1>
+    <hr>
+    <dic>
+    <p class="sub-head lead txt-white">Expand your career opportunities</p>
+    </dic>
+    <div class="container-fluid padding txt-white">
+      <div class="row padding">
+          <div class="col-md-12 col-lg-6">
+              <p><strong></strong></p>
+              <p ><strong>
+                Whether you work in machine learning or finance, or are pursuing a career in web development or data science, Python is one of the most important skills you can learn. Python's simple syntax is especially suited for desktop, web, and business applications. Python's design philosophy emphasizes readability and usability. 
+              
+              </strong></p><br>
+             <p>
+              Python was developed upon the premise that there should be only one way (and preferably one obvious way) to do things, a philosophy that has resulted in a strict level of code standardization. The core programming language is quite small and the standard library is also large. In fact, Python's large library is one of its greatest benefits, providing a variety of different tools for programmers suited for many different tasks.
+             </p>
+          </div>
+
+          <div class="col-lg-6">
+            <br>
+              <img src="img/python.jpg" class="img-fluid content1"  height="400" width="500">
+              <br><br>
+              <!-- <img src="about1.jpg" class="img-fluid content1"  height="400" width="500"> -->
+            </div>
+      </div>
+  </div>
+</div>
+</section>
+<hr class="my-4">
+<!-- About Section Ends  -->
+
+<!--Teacher section start-->
+
+<div id="teacher" class="teacher-section">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-12 section-heading" id="teacher-1">
+        <h1 class="display-4">Learn from our expert teachers</h1>
+        <hr>
+        <dic class="col-12">
+          <p class="lead">Build your library for your career and personal growth
+          </p>
+        </dic>
+      </div>
+    </div>
+
+    <div class="owl-carousel owl-theme" id="carousel" >
+      <!-- Wrapper for slides -->
+      
+        <div class="item">
+          <div id="teacher-2" class="text-justify"> 
+            <img src="img/Machine learning.jpg" 
+            alt="yoga teacher" class="img-responsive img-rounded">
+              <h3>Complete Python Bootcamp From Zero to Hero in Python</h3>
+              <p class="slider">22 total hoursAll LevelsSubtitles
+                Learn Python like a Professional Start from the basics and go all the way to creating your own applications and games
+                Learn to use Python professionally, learning both Python 2 and Python 3!
+                Create games with Python, like Tic Tac Toe and Blackjack!
+                Learn advanced Python features, like the collections module and how to work with timestamps!
+              </p>
+              <a href="#" target="_blank">
+              <i class="fab fa-facebook-square fa-2x">
+              </i></a>
+              <a href="#"><i class="fab fa-twitter-square fa-2x">
+
+              </i></a>
+               <a href="#" target="_blank">
+                <i class="fab fa-instagram fa-2x"></i>
+                </i></a> 
+              <a href="#" 
+              target="_blank">
+                <i class="fab fa-youtube-square fa-2x">
+
+                </i></a> 
+            </div>
+
+        </div>
+        <div class="item">
+          <div  id="teacher-3" class="text-justify"> 
+            <img src="img/python learning2.jpg" 
+            alt="yoga teacher" class="img-responsive img-rounded">
+              <h3>Machine Learning A-Z™: Hands-On Python & R In Data Science</h3>
+              <p class="slider">44.5 total hoursAll LevelsSubtitles
+                Learn to create Machine Learning Algorithms in Python and R from two Data Science experts. Code templates included.
+                Master Machine Learning on Python & R
+                Have a great intuition of many Machine Learning models
+                Make accurate predictions
+              </p>
+              <a href="#" 
+              target="_blank">
+              <i class="fab fa-facebook-square fa-2x">
+
+              </i></a> 
+              <a href="#">
+                <i class="fab fa-twitter-square fa-2x">
+              </i></a> 
+              <a href="#" 
+              target="_blank">
+              <i class="fab fa-instagram fa-2x"></i></a>  
+              <a href="#" 
+              target="_blank">
+                <i class="fab fa-youtube-square fa-2x"></i></a> 
+            </div>
+
+        </div>
+        <div class="item">
+           <div id="teacher-4"class="text-justify"> 
+             <img src="img/python learning.jpg" 
+             alt="yoga teacher" class="img-responsive img-rounded">
+              <h3>Python and Django Full Stack Web Developer Bootcamp</h3>
+              <p class="slider">9.5 total hoursAll LevelsSubtitles
+                A practical programming course for office workers, academics, and administrators who want to improve their productivity.
+                Automate tasks on their computer by writing simple Python programs.
+                Write programs that can do text pattern recognition with "regular expressions".
+                Programmatically generate and update Excel spreadsheets.
+              </p>
+              <a href="#" 
+              target="_blank">
+              <i class="fab fa-facebook-square fa-2x"></i></a> 
+              <a href="#">
+                <i class="fab fa-twitter-square fa-2x"></i>
+              </i></a><a href="#" 
+              target="_blank">
+              <i class="fab fa-instagram fa-2x"></i></a> 
+              <a href="#" 
+              target="_blank">
+              <i class="fab fa-youtube-square fa-2x"></i></a> 
+            </div>
+
+        </div>
+        <div class="item">
+           <div id="teacher-4"class="text-justify"> 
+             <img src="img/web dev2.jpg" 
+             alt="yoga teacher" class="img-responsive img-rounded">
+              <h3>The Web Developer Bootcamp 2021</h3>
+              <p class="slider">55 total hoursAll LevelsSubtitles
+                Become a full-stack web developer with just one course. HTML, CSS, Javascript, Node, React, MongoDB and more!
+                Be able to build ANY website you want.
+                Craft a portfolio of websites to apply for junior developer jobs.
+                Build fully-fledged websites and web apps for your startup or business.
+              </p>
+              <a href="#" target="_blank">
+                <i class="fab fa-facebook-square fa-2x"></i></a> 
+                <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a> 
+                <a href="#" 
+                target="_blank"><i class="fab fa-instagram fa-2x"></i></a> 
+                <a href="#"
+                 target="_blank">
+                  <i class="fab fa-youtube-square fa-2x"></i></a> 
+            </div>
+        </div>
+        <div class="item">
+          <div id="teacher-5"class="text-justify"> 
+            <img src="img/javascript.jpg"
+            alt="yoga teacher" class="img-responsive img-rounded">
+              <h3>The Complete JavaScript Course 2021: From Zero to Expert!</h3>
+              <p class="slider">68.5 total hoursAll LevelsSubtitles
+                The modern JavaScript course for everyone! Master JavaScript with projects, challenges and theory. Many courses in one!
+                Become an advanced, confident, and modern JavaScript developer from scratch
+                Build 6 beautiful real-world projects for your portfolio (not boring toy apps)
+                Become job-ready by understanding how JavaScript really works behind the scenes
+              </p>
+              <a href="#" target="_blank">
+                <i class="fab fa-facebook-square fa-2x"></i></a> 
+                <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a> 
+                <a href="#" target="_blank">
+                  <i class="fab fa-instagram fa-2x"></i></a>  
+                  <a href="#" 
+                  target="_blank">
+                    <i class="fab fa-youtube-square fa-2x"></i></a> 
+            </div>
+        </div>
+        <div class="item">
+          <div id="teacher-6"class="text-justify"> 
+            <img src="img/javascript1.jpg" 
+            alt="yoga teacher" class="img-responsive img-rounded">
+              <h3>Modern JavaScript From The Beginning</h3>
+              <p class="slider">11.5 total hoursAll LevelsSubtitles
+                An advanced JavaScript course for everyone! Scope, closures, prototypes, 'this', build your own framework, and more.
+                Grasp how Javascript works and it's fundamental concepts
+                Write solid, good Javascript code
+                Understand advanced concepts such as closures, prototypal inheritance, IIFEs, and much more.
+              </p>
+              <a href="#" 
+              target="_blank">
+              <i class="fab fa-facebook-square fa-2x"></i></a> 
+              <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a> 
+              <a href="#" target="_blank">
+                <i class="fab fa-instagram fa-2x"></i></a>  
+                <a href="#" 
+                arget="_blank">
+                <i class="fab fa-youtube-square fa-2x"></i></a> 
+            </div>
+        </div>
+        <div class="item">
+            <div id="teacher-7"class="text-justify"> 
+              <img src="img/masterclass java.jpg" 
+              alt="yoga teacher" class="img-responsive img-rounded">
+              <h3>The Modern JavaScript Bootcamp</h3>
+              <p class="slider">25 total hoursAll LevelsSubtitles
+                Learn modern advanced JavaScript practices and be in the top 10% of JavaScript developers
+                Advanced JavaScript Practices
+                Object Oriented Programming
+                Functional Programming
+              </p>
+              <a href="#" target="_blank">
+                <i class="fab fa-facebook-square fa-2x"></i></a> 
+                <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a> 
+                <a href="#" target="_blank">
+                  <i class="fab fa-instagram fa-2x"></i></a>  
+                  <a href="#" target="_blank">
+                    <i class="fab fa-youtube-square fa-2x"></i></a> 
+            </div>
+        </div>
+
+     
+    </div>
+    
+  </div>
+</div>
+<hr class="my-4">
+<!--teacher section close--> 
+
+
+<!-- Container ( What do we Cover? Section) -->
+<section class="wow slideInLeft" data-wow-duration="3s">
+<div id="classes" class="container text-center bg-img2">
+    
+    <h1 class="text-center display-4 txt-white">What do we Cover?</h1>
+    <hr>
+    <p class="text-center lead txt-white"> Automate tasks on their computer by writing simple programs.</p>
+    
+    <div class="row text-center">
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <div class="thumbnail">
+          <img src="img/automate.jpg" alt="yoga" width="400" height="300">
+          <p><strong>Automate the Boring Stuff with Python Programming</strong></p>
+          <p>A practical programming course for
+            office workers, academics, and
+            administrators who want to improve
+            their productivity.</p>
+          <!-- <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button> -->
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <div class="thumbnail">
+          <img src="img/react.jpg" alt="Mindfulness" width="400" height="300">
+          <p><strong>React - The Complete Guide (Hooks, React, Redux)</strong></p>
+          <p>Dive in and learn React.js from scratch!
+            Learn Reactjs, Hooks, Redux, React
+            Routing, Next.js and way
+            more!</p>
+          <!-- <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button> -->
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <div class="thumbnail">
+          <img src="img/masterclass java.jpg" alt="Deep Relaxation" width="400" height="300">
+          <p><strong>Java Programming Masterclass for
+            Software Developers</strong></p>
+          <p>Learn Java In This Course And Become
+            a Computer Programmer. Obtain
+            valuable Core Java Skills And Java
+            Certification</p>
+          <!-- <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button> -->
+        </div>
+      </div>
+    </div>
+
+  </section>
+<hr class="my-4">
+  <!-- Container ( Select your plan to Start Your Journey Section) -->
+  
+  <section class="wow slideInRight" data-wow-duration="3s">
+  <div id="pricing" class="container">
+    
+    
+      <h1 class="text-center display-4">
+        Select your plan to Start Your Journey</h1>
+        <hr>
+        <dic>
+              <p class="text-center lead">Acquire essential java basics for transitioning to the Spring Framework, Java EE, Android development and
+                more...</p>
+          </dic>
+      
+      <div class="row text-center">
+        <div class="col-sm-4 content">
+          <div class="thumbnail">
+            <!-- <img src="zero.jpg" alt="zero" width="400" height="300"> -->
+            <!-- <h2>FIT</h2> -->
+            <h1>€ 0</h1>
+                <p>Java Programming Masterclass for
+                  Software Developers</p>
+                <p>80 hours on-demand video</p>
+                <p>3 articles</p>
+                <p>1 downloadable resource</p>
+                <p>51 coding exercises</p>
+                <p>Full lifetime access</p>
+                <p>Access on mobile and TV</p>
+                <p>Certificate of completion</p>
+                <a class="btn" href="#">Buy Plan</a>
+          </div>
+        </div>
+        <div class="col-sm-4 content">
+          <div class="thumbnail">
+            <!-- <img src="zero plus 999.jpg" alt="zero plus 999" width="400" height="300"> -->
+            <!-- <h2>FITTER</h2> -->
+            <!-- <h1>₹ 999</h1> -->
+            <h1>€ 499</h1>
+            <p>React - The Complete Guide (incl
+              Hooks, React Router, Redux)</p>
+            <p>100 hours on-demand video</p>
+            <p>40 articles</p>
+            <p>60 downloadable resource</p>
+            <p>110 coding exercises</p>
+            <p>Full lifetime access</p>
+            <p>Access on mobile and TV</p>
+            <p>Certificate of completion</p>
+            <a class="btn" href="file:///home/paul/djpaul/Health%20Time%20Fit%20Work/HealthTimeFit%20HTML%20Web%20Page/SignIn.html">Buy Plan</a>
+          </div>
+        </div>
+        <div class="col-sm-4 content">
+          <div class="thumbnail">
+            <!-- <img src="zero plus 3499.jpg" alt="zero plus 3499" width="400" height="300"> -->
+            <!-- <h2>FITTEST</h2> -->
+            <h1>€ 799</h1>
+            <p>Master Angular 10 ("Angular 2")
+              reactive web apps with Angular.js</p>
+            <p>140 hours on-demand video</p>
+            <p>60 articles</p>
+            <p>170 downloadable resource</p>
+            <p>200 coding exercises</p>
+            <p>Full lifetime access</p>
+            <p>Access on mobile and TV</p>
+            <p>Certificate of completion</p>
+            <a class="btn" href="file:///home/paul/djpaul/Health%20Time%20Fit%20Work/HealthTimeFit%20HTML%20Web%20Page/SignIn.html">Buy Plan</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="my-4">
+
+<!-- <div class="container bg-1"> -->
+<section class="wow slideInLeft" data-wow-duration="3s">
+
+<div class="container bg-img">
+  <h1 class="text-center display-4 txt-white">The world's largest selection of courses</h1> 
+  <hr> 
+  <dic>
+    <p class="text-center lead txt-white">Choose from 130,000 online video courses with new additions published every month</p>
+</dic>
+          <ul class="nav nav-tabs">
+              <li class="active txt-white"><a data-toggle="tab" href="#home">Web development</a></li>
+          </ul>
+
+    <div class="tab-content txt-white">
+          <div id="home" class="tab-pane fade in active">
+            <h2>Build websites and applications with Web Development</h2>
+            <p>The world of web development is as wide as the internet itself. Much of our social and vocational lives play out on the internet, which prompts new industries aimed at creating, managing, and debugging the websites and applications that we increasingly rely on.
+
+            </p>
+          </div>
+    </div>
+
+</div>
+
+</section>
+<hr class="my-4">
+<!-- Container (Contact Section) -->
+<section class="wow slideInRight" data-wow-duration="3s">
+<div id="contact" class="container bg-contact">
+  <h1 class="text-center display-4 txt-white">Contact</h1>
+  <p class="text-center txt-white"><em>We love your feedback!</em></p>
+
+  <div class="row">
+    <div class="col-md-4 txt-white">
+      <p>Drop a note.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>India</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: +91 9599214574</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: paulsachin93@gmail.com</p>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right submit" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  
+</div>
+</section>
+
+
+
+
+<!-- Footer -->
+<footer class="text-center bg-footer txt-white">
+  <div class="container-fluid padding">
+    <div class="row text-center">
+        <div class="col-md-3">
+          <hr class="light">
+            <h3 class="txt-white">Online classes</h3>
+            <hr class="light">
+            <p>Web Corp for Bussiness</p>
+            <p>Teach on Bivha</p>
+            <p>Get App</p>
+            <p>Contact Us</p>
+            <p>Call : 0234 566 213 </p>
+            <p>Email: info@webcorp.com.au</p>
+            
+        </div>
+        <div class="col-md-3">
+            <hr class="light">
+            <h3 class="txt-white">Quick Links</h3>
+            <hr class="light">
+            <p>Home</p>
+              <p>About</p>
+                <p>Education</p>
+                  <p>Training</p>
+                    <p>Employement</p>
+                      <p>More</p>
+  
+        </div>
+        <div class="col-md-2">
+            <hr class="light">
+            <h3 class="txt-white">Services</h3>
+            <hr class="light">
+            <p>130,000 online courses</p>
+            <p>Expert instruction</p>
+            <p>Lifetime access</p>
+            <p>Access on mobile and
+              TV</p>
+              <p>Certificate of
+              completion</p>
+        </div>
+          <div class="col-md-3">
+            <hr class="light">
+            <h3 class="txt-white">Web Corp</h3>
+            <hr class="light">
+            <p>Career</p>
+              <p>Blog</p>
+              <p>Help and Support</p>
+              <p>Terms</p>
+              <p>Privacy policy</p>
+              <p>Sitemap</p>
+              <p>Featured courses</p>
+        </div>
+
+
+    
+    </div>
+</div>
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>© 2021 Web Corportaion.. All rights reserved.</p>
+  <h3 class="txt-white">www.webcorporation.com</h3> 
+</footer>
+
+
+</body>
+<script src="dist/wow.js"></script>
+<script>
+  wow = new WOW(
+    {
+      animateClass: 'animated',
+      offset:       100,
+      callback:     function(box) {
+        console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+      }
+    }
+  );
+  wow.init();
+  document.getElementById('moar').onclick = function() {
+    var section = document.createElement('section');
+    section.className = 'section--purple wow fadeInDown';
+    this.parentNode.insertBefore(section, this);
+  };
+</script>
+</html>
